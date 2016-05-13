@@ -9,12 +9,12 @@ var INPUTS = {
   down: false
 };
 window.addEventListener('keydown', function(e){
-  if(e.keyCode == 37) INPUTS.up = true;
-  if(e.keyCode == 39) INPUTS.down = true;
+  if(e.keyCode == 39) INPUTS.up = true;
+  if(e.keyCode == 37) INPUTS.down = true;
 });
 window.addEventListener('keyup', function(e){
-  if(e.keyCode == 37) INPUTS.up = false;
-  if(e.keyCode == 39) INPUTS.down = false;
+  if(e.keyCode == 39) INPUTS.up = false;
+  if(e.keyCode == 37) INPUTS.down = false;
 });
 var STATE = {
   current: 'level_one',
