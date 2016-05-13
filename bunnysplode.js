@@ -9,12 +9,12 @@ var INPUTS = {
   down: false
 };
 window.addEventListener('keydown', function(e){
-  if(e.keyCode == 38) INPUTS.up = true;
-  if(e.keyCode == 40) INPUTS.down = true;
+  if(e.keyCode == 37) INPUTS.up = true;
+  if(e.keyCode == 39) INPUTS.down = true;
 });
 window.addEventListener('keyup', function(e){
-  if(e.keyCode == 38) INPUTS.up = false;
-  if(e.keyCode == 40) INPUTS.down = false;
+  if(e.keyCode == 37) INPUTS.up = false;
+  if(e.keyCode == 39) INPUTS.down = false;
 });
 var STATE = {
   current: 'level_one',
@@ -205,7 +205,7 @@ STATE.level_one = function(){
       fill: '#00FF00'
     }
     window.addEventListener('keydown', function(e){
-      if(e.keyCode == 179){
+      if(e.keyCode == 32 || e.keyCode == 179){
         var bullet = new PIXI.Sprite.fromImage('player.jpg');
         bullet.position.x = player.position.x + player.width;
         bullet.position.y = player.position.y + (player.height/2);
