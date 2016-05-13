@@ -205,7 +205,7 @@ STATE.level_one = function(){
       fill: '#00FF00'
     }
     window.addEventListener('keydown', function(e){
-      if(e.keyCode == 32){
+      if(e.keyCode == 179){
         var bullet = new PIXI.Sprite.fromImage('player.jpg');
         bullet.position.x = player.position.x + player.width;
         bullet.position.y = player.position.y + (player.height/2);
